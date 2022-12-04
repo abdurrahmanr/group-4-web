@@ -5,6 +5,7 @@
     padding: 0;
     font-family: Poppins,  sans-serif;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Hero */
@@ -291,6 +292,10 @@ footer .media li {
 
 @media only screen and (max-width: 600px) {
 
+    #hero .content {
+        padding-top: 300px;
+    }
+
     #hero nav ul{
         flex-direction: column;
         position: fixed;
@@ -331,10 +336,6 @@ footer .media li {
         display: none;
     }
 
-    #about {
-        padding-top: 0;
-    }
-
     #about .content {
         flex-direction: column;
         gap: 25px;
@@ -358,12 +359,15 @@ footer .media li {
     }
 
     #about .desc {
-        margin-bottom: 0;
+        margin-bottom: 32px;
+    }
+
+    #about .about {
+        text-align: center;
     }
     
     #skills {
         height: 100vh;
-        padding-top: 0px;
     }
 
     #skills .cards {
@@ -377,7 +381,6 @@ footer .media li {
 
     #services {
         height: 150vh;
-        padding-top: 0px;
     }
 
     #services .cards {

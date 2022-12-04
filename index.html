@@ -7,7 +7,6 @@
     <title>Final Kelompok 4</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -19,14 +18,19 @@
                 <div class="logo">
                     <a href="#hero"><h1>Group 4</h1></a>
                 </div>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#" class="nav-link">Portfolio</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
 
             <!-- Content -->
@@ -50,11 +54,11 @@
             <h1>About Me</h1>
             <p class="desc">My introduction</p>
             <div class="content">
-                <div class="profile" data-aos="fade-right" data-aos-easing="ease-in-out">
+                <div class="profile">
                     <img src="./src/cat.gif" alt="">
                 </div>
-                <div class="about" data-aos="fade-left" data-aos-easing="ease-in-out">
-                    <div class="items" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="250">
+                <div class="about">
+                    <div class="items">
                         <div class="item">
                             <img class="item-icon" src="./src/ico/ribbon.svg" alt="">
                             <p class="card-text">Experience</p>
@@ -128,10 +132,7 @@
         <p>© Group 4. All rights reserved</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="./script.js"></script>
 
 </body>
 </html>

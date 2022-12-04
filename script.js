@@ -1,3 +1,23 @@
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".nav-link");
+
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.href.includes(current)) {
+      li.classList.add("active");
+    }
+  });
+};
+
 const menu = document.querySelector(".hamburger");
 const nav = document.querySelector(".nav-menu");
 const gotop = document.querySelector(".goTop");

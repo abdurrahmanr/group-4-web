@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Kelompok 4</title>
+    <title>Group 4</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./src/fav.png" type="image/x-icon">
+    <script defer src="./script.js"></script>
 </head>
 <body>
     
@@ -19,12 +21,12 @@
                     <a href="#hero"><h1>Group 4</h1></a>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#" class="nav-link">Portfolio</a></li>
-                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -59,8 +61,10 @@
     <!-- About -->
     <section id="about">
         <div class="container">
-            <h1>About Me</h1>
-            <p class="desc">My introduction</p>
+            <div class="title">
+                <h1>About Me</h1>
+                <p class="desc">My introduction</p>
+            </div>
             <div class="content">
                 <div class="profile">
                     <img src="./src/cat.gif" alt="">
@@ -93,8 +97,10 @@
     <!-- Skills -->
     <section id="skills">
         <div class="container">
-            <h1>Skills</h1>
-            <p class="desc">My technical level</p>
+            <div class="title">
+                <h1>Skills</h1>
+                <p class="desc">My technical level</p>
+            </div>
             <div class="cards">
                 <div class="card">
                     <h1 class="title">Frontend developer</h1>
@@ -207,7 +213,7 @@
         <div class="container">
             <div class="title">
                 <h1>Services</h1>
-                <p class="desc">My technical level</p>
+                <p class="desc">What i offer</p>
             </div>
             <div class="cards">
                 <div class="card">
@@ -235,6 +241,83 @@
         </div>
     </section>
 
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="title">
+                <h1>Portfolio</h1>
+                <p class="desc">Most recent work</p>
+            </div>
+            <div class="cards">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="left">
+                <div class="title">
+                    <h1>Talk to me</h1>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="contact">
+                            <img src="/src/ico/mail.svg" alt="">
+                            <h1>Email</h1>
+                            <p class="desc">test@testing.com</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="contact">
+                            <img src="/src/ico/whatsapp.png" alt="">
+                            <h1>Whatsapp</h1>
+                            <p class="desc">wa.me/404</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="contact">
+                            <img src="/src/ico/instagram.svg" alt="">
+                            <h1>Instagram</h1>
+                            <p class="desc">@testing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h1>Write me your project</h1>
+                </div>
+                <form action="">
+                    <div class="group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Insert your name">
+                    </div>
+
+                    <div class="group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Insert your email" required>
+                    </div>
+
+                    <div class="group">
+                        <label for="project">Project</label>
+                        <textarea name="project" id="project" placeholder="Write your project"></textarea>
+                    </div>
+                    <div class="btn-hold">
+                        <button class="btn-hello" type="submit">
+                            <p>Send Message</p>
+                            <img src="./src/ico/send.svg" alt="">
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
     <a href="#hero" class="goTop">
         <img src="./src/ico/upload.svg" alt="">
     </a>
@@ -253,8 +336,6 @@
         </ul>
         <p>© Group 4. All rights reserved</p>
     </footer>
-
-    <script src="./script.js"></script>
 
 </body>
 </html>

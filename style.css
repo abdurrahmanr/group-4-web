@@ -71,6 +71,15 @@ hr {
     color: rgb(250, 250, 250);
     background-color: rgb(50, 50, 50);
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    width: 156px;
+}
+
+.btn-hello:hover{
+    background-color: rgb(75, 75, 75);
+
 }
 
 .second {
@@ -165,6 +174,9 @@ hr {
 #about .about {
     width: 40%;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #about .items {
@@ -177,7 +189,8 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: 175px;
+    text-align: start;
     height: 125px;
     border-radius: 10px;
     background-color: #fff;
@@ -206,6 +219,16 @@ hr {
 #about .card-text {
     font-weight: 600;
     color: rgb(4, 7, 3);
+}
+
+#about .btn-hello {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about .btn-hello img {
+    width: 24px;
 }
 
 /* Skills */
@@ -564,10 +587,15 @@ footer .media li {
     display: flex;
 }
 
+.btn-hold img {
+    width: 24px;
+}
+
 .btn-hold button {
     display: flex;
     gap: 8px;
     align-items: center;
+    border: none;
     justify-content: center;
 }
 
@@ -587,7 +615,7 @@ footer .media li {
         background-color: rgba(250, 250, 250, 0.9);
         backdrop-filter: blur(8px);
         padding: 24px 0px;
-        top: -200vh;
+        top: -100vh;
     }
 
     #hero nav ul.active {
@@ -641,7 +669,7 @@ footer .media li {
     }
 
     #about .items .item {
-        width: 75%;
+        width: 175px;
     }
 
     #about .desc {
@@ -738,5 +766,7 @@ footer .media li {
     .btn-hold {
         justify-content: center;
     }
+
+    
 
 }
